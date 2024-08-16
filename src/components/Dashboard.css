@@ -1,0 +1,74 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .panel {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .panel h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  
+  /* 실시간 카메라 피드 섹션 */
+  .camera-feed .video-container {
+    margin-top: 20px;
+  }
+  
+  .camera-feed video {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* 알림 패널 */
+  .notification-panel ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notification-panel li {
+    background-color: #444;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* 통계 섹션 */
+  .stats-section .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .stat {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1 1 30%;
+    min-width: 150px;
+    box-sizing: border-box;
+  }
+  
+  .stat-title {
+    font-size: 1.2em;
+  }
+  
+  .stat-value {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

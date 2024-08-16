@@ -1,0 +1,46 @@
+.settings-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #2e2e2e; /* 배경색 설정 */
+  color: #ffffff; /* 텍스트 색상 설정 */
+  border-radius: 10px;
+}
+
+.settings-section {
+  margin-bottom: 30px;
+}
+
+.settings-section h2 {
+  margin-bottom: 15px;
+  color: #f8f8ff; /* 제목 색상 */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: none; /* 테두리 제거 */
+  border-radius: 5px;
+  background-color: #444; /* 배경색 회색으로 변경 */
+  color: #ffffff; /* 텍스트 색상 흰색으로 */
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder {
+  color: #bbbbbb; /* 플레이스홀더 색상 */
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+}

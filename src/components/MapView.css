@@ -1,0 +1,99 @@
+.map-view-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e1e2f;
+  color: white;
+}
+
+.map-view-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.map-view-header h1 {
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none; /* 테두리 제거 */
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #444; /* 배경색 회색으로 변경 */
+  color: white; /* 텍스트 색상 흰색으로 */
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0066cc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #004c99;
+}
+
+.map-view-content {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: #28293d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.map-view-map {
+  flex: 3;
+  background-color: #333;
+  padding: 20px;
+}
+
+.map-view-sidebar {
+  flex: 1;
+  background-color: #3b3b5a;
+  color: white;
+  padding: 20px;
+}
+
+.map-view-sidebar h2, .map-view-sidebar h3 {
+  margin-bottom: 20px;
+  color: #f8f8ff;
+}
+
+.map-view-results ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.map-view-results ul li {
+  margin-bottom: 10px;
+  background-color: #555;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.map-view-results ul li:hover {
+  background-color: #0066cc;
+}
+
+.map-view-results ul li strong {
+  color: #ff6666;
+}
