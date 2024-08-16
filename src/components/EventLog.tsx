@@ -11,9 +11,9 @@ interface EventLogItem {
 
 // 예시 데이터
 const initialEventLogData: EventLogItem[] = [
-  { id: 1, vehicleInfo: '차량 1: 흰색 SUV', time: '2024-08-01 10:00', location: '서울시 강남구', description: '과속' },
-  { id: 2, vehicleInfo: '차량 2: 검은색 세단', time: '2024-08-02 11:30', location: '서울시 중구', description: '사고' },
-  { id: 3, vehicleInfo: '차량 3: 회색 트럭', time: '2024-08-03 14:00', location: '서울시 서초구', description: '신호 위반' },
+  { id: 1, vehicleInfo: '차량 1: 흰색 SUV', time: '2024-08-01 10:00', location: '부산시 해운대구', description: '과속' },
+  { id: 2, vehicleInfo: '차량 2: 검은색 세단', time: '2024-08-03 11:00', location: '서울시 종로구', description: '사고' },
+  { id: 3, vehicleInfo: '차량 3: 회색 트럭', time: '2024-08-04 12:00', location: '경기도 성남시', description: '사고' },
   // 추가 데이터
 ];
 
@@ -49,6 +49,7 @@ const EventLog: React.FC = () => {
           placeholder="차량 정보, 위치, 설명으로 검색"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
         />
         <button onClick={handleSearch}>검색</button>
         <div className="sort-options">

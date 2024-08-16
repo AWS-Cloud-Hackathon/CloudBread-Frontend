@@ -6,9 +6,9 @@ import './MapView.css';
 
 // 예시 차량 위치와 경로 데이터 (서울)
 const vehicleData = [
-  { id: 1, position: [37.5665, 126.9780], info: '차량 1: 상세 정보', time: '2024-08-01 10:00', description: '사고 다발지역' },
-  { id: 2, position: [37.5765, 126.9880], info: '차량 2: 상세 정보', time: '2024-08-01 11:00', description: '과속 사건' },
-  { id: 3, position: [37.5865, 126.9980], info: '차량 3: 상세 정보', time: '2024-08-01 12:00', description: '주차 위반' },
+  { id: 1, position: [37.5665, 126.9780], info: '차량 1: 상세 정보', time: '2024-08-01 10:00', description: '과속 사건' },
+  { id: 2, position: [37.5765, 126.9880], info: '차량 2: 상세 정보', time: '2024-08-03 11:00', description: '사고 다발지역' },
+  { id: 3, position: [37.5865, 126.9980], info: '차량 3: 상세 정보', time: '2024-08-04 12:00', description: '사고 다발지역' },
 ];
 
 const getCustomIcon = (description: string) => {

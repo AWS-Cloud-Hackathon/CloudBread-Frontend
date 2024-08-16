@@ -3,8 +3,9 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #1e1e2f;
+  background-color: #333;
   color: white;
+  border-radius: 10px; /* 모서리 둥글게 */
 }
 
 .map-view-header {
@@ -13,10 +14,12 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  border-radius: 10px; /* 모서리 둥글게 */
 }
 
 .map-view-header h1 {
   margin-bottom: 10px;
+  border-radius: 10px; /* 모서리 둥글게 */
 }
 
 .search-bar {
@@ -24,6 +27,7 @@
   align-items: center;
   width: 100%;
   max-width: 600px;
+  border-radius: 10px; /* 모서리 둥글게 */
 }
 
 .search-bar input[type="text"] {
@@ -31,7 +35,7 @@
   padding: 10px;
   font-size: 16px;
   border: none; /* 테두리 제거 */
-  border-radius: 5px;
+  border-radius: 10px; /* 모서리 둥글게 */
   margin-right: 10px;
   background-color: #444; /* 배경색 회색으로 변경 */
   color: white; /* 텍스트 색상 흰색으로 */
@@ -42,7 +46,7 @@
   font-size: 16px;
   background-color: #0066cc;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px; /* 모서리 둥글게 */
   color: white;
   cursor: pointer;
 }
@@ -56,7 +60,7 @@
   width: 100%;
   height: calc(100vh - 100px);
   background-color: #28293d;
-  border-radius: 10px;
+  border-radius: 10px; /* 모서리 둥글게 */
   overflow: hidden;
 }
 
@@ -64,6 +68,7 @@
   flex: 3;
   background-color: #333;
   padding: 20px;
+  border-radius: 10px; /* 모서리 둥글게 */
 }
 
 .map-view-sidebar {
@@ -71,29 +76,34 @@
   background-color: #3b3b5a;
   color: white;
   padding: 20px;
+  border-radius: 10px; /* 모서리 둥글게 */
 }
 
 .map-view-sidebar h2, .map-view-sidebar h3 {
   margin-bottom: 20px;
   color: #f8f8ff;
+  border-radius: 10px; /* 모서리 둥글게 */
 }
 
 .map-view-results ul {
   list-style-type: none;
   padding: 0;
+  border-radius: 10px; /* 모서리 둥글게 */
 }
 
 .map-view-results ul li {
   margin-bottom: 10px;
   background-color: #555;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px; /* 모서리 둥글게 */
 }
 
 .map-view-results ul li:hover {
   background-color: #0066cc;
+  border-radius: 10px; /* 모서리 둥글게 */
 }
 
 .map-view-results ul li strong {
   color: #ff6666;
+  border-radius: 10px; /* 모서리 둥글게 */
 }

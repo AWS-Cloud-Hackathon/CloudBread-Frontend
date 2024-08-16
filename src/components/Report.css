@@ -1,0 +1,48 @@
+.report-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.get-location-btn,
+.submit-btn,
+input[type="file"],
+input[type="text"],
+select {
+    display: block;
+    width: 100%;
+    padding: 12px; /* 버튼과 입력 필드의 padding을 통일 */
+    margin: 10px 0;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box; /* 박스 크기 계산을 border와 padding을 포함하여 처리 */
+}
+
+input[type="file"],
+input[type="text"],
+select {
+    background-color: #444; /* 버튼과 입력 필드의 배경색 차이를 반영 */
+    color: white;
+    cursor: auto; /* 버튼과 달리 입력 필드는 기본 커서 */
+}
+
+.get-location-btn:hover,
+.submit-btn:hover {
+    background-color: #004c99;
+}
+
+.section {
+    margin-bottom: 20px;
+}
