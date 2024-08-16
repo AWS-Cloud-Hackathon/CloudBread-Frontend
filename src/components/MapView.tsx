@@ -4,7 +4,6 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './MapView.css';
 
-// 예시 차량 위치와 경로 데이터 (서울)
 const vehicleData = [
   { id: 1, position: [37.5665, 126.9780], info: '차량 1: 상세 정보', time: '2024-08-01 10:00', description: '과속 사건' },
   { id: 2, position: [37.5765, 126.9880], info: '차량 2: 상세 정보', time: '2024-08-03 11:00', description: '사고 다발지역' },
@@ -12,7 +11,7 @@ const vehicleData = [
 ];
 
 const getCustomIcon = (description: string) => {
-  let iconUrl = '/icons/default_icon.png'; // 기본 아이콘 경로
+  let iconUrl = '/icons/default_icon.png'; 
 
   if (description.includes('사고 다발지역')) {
     iconUrl = '/icons/accident_icon.png';
@@ -22,7 +21,7 @@ const getCustomIcon = (description: string) => {
     iconUrl = '/icons/parking_violation_icon.png';
   }
 
-  console.log('Icon URL:', iconUrl); // 아이콘 URL 로그
+  console.log('Icon URL:', iconUrl);
 
   return new L.Icon({
     iconUrl,
@@ -67,7 +66,7 @@ const MapView: React.FC = () => {
             placeholder="차량 정보, 시간 또는 설명으로 검색"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyPress={(e) => e.key === 'Enter' && handleSearch()} // 엔터 키 처리 추가
+            onKeyPress={(e) => e.key === 'Enter' && handleSearch()} 
           />
           <button onClick={handleSearch}>검색</button>
         </div>

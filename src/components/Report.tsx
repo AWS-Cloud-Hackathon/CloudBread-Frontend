@@ -21,10 +21,8 @@ const ReportPage: React.FC = () => {
       navigator.geolocation.getCurrentPosition(async (position) => {
         const { latitude, longitude } = position.coords;
 
-        // 위도와 경도 설정
         setLocation({ latitude, longitude, address: '' });
 
-        // Nominatim API를 사용하여 도로명 주소를 가져오기
         try {
           const response = await axios.get(`https://nominatim.openstreetmap.org/reverse`, {
             params: {
@@ -48,7 +46,7 @@ const ReportPage: React.FC = () => {
   const handleReportTypeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedReportType(event.target.value);
     if (event.target.value !== '기타') {
-      setCustomReport(''); // 기타가 아닐 경우 입력 필드를 초기화
+      setCustomReport('');
     }
   };
 

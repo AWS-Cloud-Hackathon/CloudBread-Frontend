@@ -34,7 +34,7 @@ const Settings: React.FC = () => {
             id="profileName"
             value={profileName}
             onChange={handleNameChange}
-            placeholder="이름을 입력하세요" // placeholder 추가
+            placeholder="이름을 입력하세요"
           />
         </div>
         <div className="form-group">
@@ -44,7 +44,7 @@ const Settings: React.FC = () => {
             id="email"
             value={email}
             onChange={handleEmailChange}
-            placeholder="이메일을 입력하세요" // placeholder 추가
+            placeholder="이메일을 입력하세요"
           />
         </div>
       </div>

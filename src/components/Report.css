@@ -1,5 +1,4 @@
 .report-container {
-    max-width: 600px;
     margin: 0 auto;
     background-color: #333;
     color: white;
@@ -19,7 +18,7 @@ input[type="text"],
 select {
     display: block;
     width: 100%;
-    padding: 12px; /* 버튼과 입력 필드의 padding을 통일 */
+    padding: 12px;
     margin: 10px 0;
     background-color: #0066cc;
     border: none;
@@ -27,15 +26,15 @@ select {
     color: white;
     cursor: pointer;
     text-align: center;
-    box-sizing: border-box; /* 박스 크기 계산을 border와 padding을 포함하여 처리 */
+    box-sizing: border-box;
 }
 
 input[type="file"],
 input[type="text"],
 select {
-    background-color: #444; /* 버튼과 입력 필드의 배경색 차이를 반영 */
+    background-color: #444;
     color: white;
-    cursor: auto; /* 버튼과 달리 입력 필드는 기본 커서 */
+    cursor: auto;
 }
 
 .get-location-btn:hover,
